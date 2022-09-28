@@ -1,0 +1,313 @@
+====================================================================================================
+                                             Arguments                                              
+====================================================================================================
+seed                          :                                                                    0
+log_folder                    :                                                          logs/2-gram
+gpu                           :                                                                 None
+data_path                     :                                /lustre04/scratch/qfournie/data/large
+train_folder                  :                                                          Train:train
+valid_id_folder               :                                                    Valid ID:valid_id
+valid_ood_folders             :                          Valid OOD (Connection):valid_ood_connection
+                                                                       Valid OOD (CPU):valid_ood_cpu
+                                                                     Valid OOD (IO):valid_ood_dumpio
+                                                               Valid OOD (OPCache):valid_ood_opcache
+                                                                 Valid OOD (Socket):valid_ood_socket
+                                                                       Valid OOD (SSL):valid_ood_ssl
+test_id_folder                :                                                      Test ID:test_id
+test_ood_folders              :                            Test OOD (Connection):test_ood_connection
+                                                                         Test OOD (CPU):test_ood_cpu
+                                                                       Test OOD (IO):test_ood_dumpio
+                                                                 Test OOD (OPCache):test_ood_opcache
+                                                                   Test OOD (Socket):test_ood_socket
+                                                                         Test OOD (SSL):test_ood_ssl
+generate_dataset              :                                                                False
+max_sample                    :                                                                 None
+max_token                     :                                                                 None
+model                         :                                                                ngram
+load_model                    :                                                                 None
+order                         :                                                                    3
+dim_sys                       :                                                                 None
+dim_entry                     :                                                                 None
+dim_ret                       :                                                                 None
+dim_proc                      :                                                                 None
+dim_pid                       :                                                                 None
+dim_tid                       :                                                                 None
+dim_time                      :                                                                 None
+dim_order                     :                                                                 None
+n_head                        :                                                                 None
+n_hidden                      :                                                                 None
+n_layer                       :                                                                 None
+dropout                       :                                                                 None
+activation                    :                                                                 None
+tfixup                        :                                                                False
+window                        :                                                                 None
+dilatation                    :                                                                 None
+global_att                    :                                                                 None
+batch                         :                                                                 None
+n_update                      :                                                                 None
+eval                          :                                                                 None
+lr                            :                                                                 None
+warmup_steps                  :                                                                 None
+optimizer                     :                                                                 None
+clip                          :                                                                 None
+ls                            :                                                                 None
+reduce_lr_patience            :                                                                 None
+early_stopping_patience       :                                                                 None
+chk                           :                                                                False
+amp                           :                                                                False
+dataset_stat                  :                                                                 True
+analysis                      :                                                                 True
+====================================================================================================
+                                             Vocabulary                                             
+====================================================================================================
+Vocabulary size               :                                                                   95
+Number of processes           :                                                                   58
+====================================================================================================
+                                             Train Set                                              
+====================================================================================================
+Number of requests            :                                                              999,063
+
+Min requests length           :                                                                  238
+Mean requests length          :                                                    1105.7 ±    244.8
+Max requests length           :                                                                4,645
+
+Min request duration          :                                                               0.28ms
+Mean request duration         :                                                      1.68 ±   0.65ms
+Max request duration          :                                                              53.61ms
+====================================================================================================
+                                            Valid ID Set                                            
+====================================================================================================
+Number of requests            :                                                               99,058
+Min requests length           :                                                                   30
+Mean requests length          :                                                    1107.3 ±    244.9
+Max requests length           :                                                                2,803
+Min request duration          :                                                               0.03ms
+Mean request duration         :                                                      1.67 ±   0.59ms
+Max request duration          :                                                              11.69ms
+====================================================================================================
+                                     Valid OOD (Connection) Set                                     
+====================================================================================================
+Number of requests            :                                                               99,016
+Min requests length           :                                                                  246
+Mean requests length          :                                                    1125.7 ±    243.0
+Max requests length           :                                                                2,882
+Min request duration          :                                                               0.94ms
+Mean request duration         :                                                      1.66 ±   0.60ms
+Max request duration          :                                                              15.02ms
+====================================================================================================
+                                        Valid OOD (CPU) Set                                         
+====================================================================================================
+Number of requests            :                                                               57,616
+Min requests length           :                                                                  258
+Mean requests length          :                                                    1910.6 ±    607.6
+Max requests length           :                                                                6,221
+Min request duration          :                                                               1.31ms
+Mean request duration         :                                                     13.25 ±   6.06ms
+Max request duration          :                                                              52.10ms
+====================================================================================================
+                                         Valid OOD (IO) Set                                         
+====================================================================================================
+Number of requests            :                                                               98,974
+Min requests length           :                                                                  350
+Mean requests length          :                                                    1827.7 ±    323.4
+Max requests length           :                                                                6,155
+Min request duration          :                                                               1.27ms
+Mean request duration         :                                                      2.13 ±   3.23ms
+Max request duration          :                                                             349.33ms
+====================================================================================================
+                                      Valid OOD (OPCache) Set                                       
+====================================================================================================
+Number of requests            :                                                               99,069
+Min requests length           :                                                                  256
+Mean requests length          :                                                    1162.9 ±    244.2
+Max requests length           :                                                                2,824
+Min request duration          :                                                               0.99ms
+Mean request duration         :                                                      1.78 ±   0.60ms
+Max request duration          :                                                              14.79ms
+====================================================================================================
+                                       Valid OOD (Socket) Set                                       
+====================================================================================================
+Number of requests            :                                                               99,074
+Min requests length           :                                                                  216
+Mean requests length          :                                                    2082.0 ±    362.5
+Max requests length           :                                                                8,463
+Min request duration          :                                                               0.83ms
+Mean request duration         :                                                      6.89 ±   0.73ms
+Max request duration          :                                                              48.79ms
+====================================================================================================
+                                        Valid OOD (SSL) Set                                         
+====================================================================================================
+Number of requests            :                                                               99,072
+Min requests length           :                                                                   16
+Mean requests length          :                                                    1058.1 ±    229.1
+Max requests length           :                                                                3,230
+Min request duration          :                                                               0.04ms
+Mean request duration         :                                                      1.48 ±   0.36ms
+Max request duration          :                                                              15.92ms
+====================================================================================================
+                                            Test ID Set                                             
+====================================================================================================
+Number of requests            :                                                               99,065
+Min requests length           :                                                                  240
+Mean requests length          :                                                    1108.7 ±    247.1
+Max requests length           :                                                                2,683
+Min request duration          :                                                               0.91ms
+Mean request duration         :                                                      1.67 ±   0.61ms
+Max request duration          :                                                              12.36ms
+====================================================================================================
+                                     Test OOD (Connection) Set                                      
+====================================================================================================
+Number of requests            :                                                               99,019
+Min requests length           :                                                                  158
+Mean requests length          :                                                    1125.0 ±    243.3
+Max requests length           :                                                                2,792
+Min request duration          :                                                               0.27ms
+Mean request duration         :                                                      1.66 ±   0.60ms
+Max request duration          :                                                              11.83ms
+====================================================================================================
+                                         Test OOD (CPU) Set                                         
+====================================================================================================
+Number of requests            :                                                               56,191
+Min requests length           :                                                                  222
+Mean requests length          :                                                    1913.8 ±    596.0
+Max requests length           :                                                                6,363
+Min request duration          :                                                               0.51ms
+Mean request duration         :                                                     13.58 ±   5.81ms
+Max request duration          :                                                              35.69ms
+====================================================================================================
+                                         Test OOD (IO) Set                                          
+====================================================================================================
+Number of requests            :                                                               98,980
+Min requests length           :                                                                  392
+Mean requests length          :                                                    1821.1 ±    321.0
+Max requests length           :                                                                6,967
+Min request duration          :                                                               1.25ms
+Mean request duration         :                                                      2.10 ±   1.23ms
+Max request duration          :                                                             103.69ms
+====================================================================================================
+                                       Test OOD (OPCache) Set                                       
+====================================================================================================
+Number of requests            :                                                               99,057
+Min requests length           :                                                                  250
+Mean requests length          :                                                    1160.6 ±    245.9
+Max requests length           :                                                                2,896
+Min request duration          :                                                               0.96ms
+Mean request duration         :                                                      1.77 ±   0.60ms
+Max request duration          :                                                              11.94ms
+====================================================================================================
+                                       Test OOD (Socket) Set                                        
+====================================================================================================
+Number of requests            :                                                               99,084
+Min requests length           :                                                                  679
+Mean requests length          :                                                    2081.8 ±    355.7
+Max requests length           :                                                                7,032
+Min request duration          :                                                               3.63ms
+Mean request duration         :                                                      6.89 ±   0.64ms
+Max request duration          :                                                              19.61ms
+====================================================================================================
+                                         Test OOD (SSL) Set                                         
+====================================================================================================
+Number of requests            :                                                               99,067
+Min requests length           :                                                                  238
+Mean requests length          :                                                    1054.8 ±    230.2
+Max requests length           :                                                                3,855
+Min request duration          :                                                               0.80ms
+Mean request duration         :                                                      1.47 ±   0.38ms
+Max request duration          :                                                              22.23ms
+====================================================================================================
+                                               Model                                                
+====================================================================================================
+3-grams extraction done in 0:29:09
+====================================================================================================
+                                             Evaluation                                             
+====================================================================================================
+Train                         :                                                            acc 30.7%
+Valid ID                      :                                                            acc 30.7%
+Valid OOD (Connection)        :                                                            acc 30.5%
+Valid OOD (CPU)               :                                                            acc 44.2%
+Valid OOD (IO)                :                                                            acc 26.9%
+Valid OOD (OPCache)           :                                                            acc 31.0%
+Valid OOD (Socket)            :                                                            acc 36.3%
+Valid OOD (SSL)               :                                                            acc 30.6%
+Test ID                       :                                                            acc 30.6%
+Test OOD (Connection)         :                                                            acc 30.6%
+Test OOD (CPU)                :                                                            acc 44.4%
+Test OOD (IO)                 :                                                            acc 26.9%
+Test OOD (OPCache)            :                                                            acc 31.0%
+Test OOD (Socket)             :                                                            acc 36.2%
+Test OOD (SSL)                :                                                            acc 30.5%
+====================================================================================================
+                                           OOD Detection                                            
+====================================================================================================
+Valid OOD (Connection):
+    AUROC                     :                                                               52.70%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.00%
+    F-score                   :                                                               66.66%
+    Accuracy                  :                                                               50.00%
+Test OOD (Connection):
+    AUROC                     :                                                               51.64%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               49.99%
+    F-score                   :                                                               66.66%
+    Accuracy                  :                                                               50.00%
+Valid OOD (CPU):
+    AUROC                     :                                                                2.10%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                               36.77%
+    F-score                   :                                                               53.77%
+    Accuracy                  :                                                               36.77%
+Test OOD (CPU):
+    AUROC                     :                                                                0.82%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                               36.19%
+    F-score                   :                                                               53.15%
+    Accuracy                  :                                                               36.19%
+Valid OOD (IO):
+    AUROC                     :                                                               98.83%
+    Recall                    :                                                               95.51%
+    Precision                 :                                                               94.51%
+    F-score                   :                                                               95.01%
+    Accuracy                  :                                                               94.99%
+Test OOD (IO):
+    AUROC                     :                                                               98.70%
+    Recall                    :                                                               95.26%
+    Precision                 :                                                               93.91%
+    F-score                   :                                                               94.58%
+    Accuracy                  :                                                               94.54%
+Valid OOD (OPCache):
+    AUROC                     :                                                               69.44%
+    Recall                    :                                                               93.88%
+    Precision                 :                                                               53.06%
+    F-score                   :                                                               67.80%
+    Accuracy                  :                                                               55.41%
+Test OOD (OPCache):
+    AUROC                     :                                                               68.37%
+    Recall                    :                                                               93.23%
+    Precision                 :                                                               52.83%
+    F-score                   :                                                               67.44%
+    Accuracy                  :                                                               54.99%
+Valid OOD (Socket):
+    AUROC                     :                                                               21.26%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.01%
+    F-score                   :                                                               66.67%
+    Accuracy                  :                                                               50.02%
+Test OOD (Socket):
+    AUROC                     :                                                               21.41%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                               50.01%
+    F-score                   :                                                               66.68%
+    Accuracy                  :                                                               50.02%
+Valid OOD (SSL):
+    AUROC                     :                                                               50.98%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.01%
+    F-score                   :                                                               66.67%
+    Accuracy                  :                                                               50.01%
+Test OOD (SSL):
+    AUROC                     :                                                               50.46%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.00%
+    F-score                   :                                                               66.67%
+    Accuracy                  :                                                               50.00%

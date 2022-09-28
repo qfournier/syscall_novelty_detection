@@ -1,0 +1,335 @@
+====================================================================================================
+                                             Arguments                                              
+====================================================================================================
+seed                          :                                                                    4
+log_folder                    :                                                          logs/lstm-4
+gpu                           :                                                              0,1,2,3
+data_path                     :                                /lustre04/scratch/qfournie/data/large
+train_folder                  :                                                          Train:train
+valid_id_folder               :                                                    Valid ID:valid_id
+valid_ood_folders             :                          Valid OOD (Connection):valid_ood_connection
+                                                                       Valid OOD (CPU):valid_ood_cpu
+                                                                     Valid OOD (IO):valid_ood_dumpio
+                                                               Valid OOD (OPCache):valid_ood_opcache
+                                                                 Valid OOD (Socket):valid_ood_socket
+                                                                       Valid OOD (SSL):valid_ood_ssl
+test_id_folder                :                                                      Test ID:test_id
+test_ood_folders              :                            Test OOD (Connection):test_ood_connection
+                                                                         Test OOD (CPU):test_ood_cpu
+                                                                       Test OOD (IO):test_ood_dumpio
+                                                                 Test OOD (OPCache):test_ood_opcache
+                                                                   Test OOD (Socket):test_ood_socket
+                                                                         Test OOD (SSL):test_ood_ssl
+generate_dataset              :                                                                False
+max_sample                    :                                                                 None
+max_token                     :                                                                 None
+model                         :                                                                 lstm
+load_model                    :                                                                 None
+order                         :                                                                 None
+dim_sys                       :                                                                   48
+dim_entry                     :                                                                   12
+dim_ret                       :                                                                   12
+dim_proc                      :                                                                   48
+dim_pid                       :                                                                   12
+dim_tid                       :                                                                   12
+dim_time                      :                                                                   12
+dim_order                     :                                                                   12
+n_head                        :                                                                 None
+n_hidden                      :                                                                  256
+n_layer                       :                                                                    2
+dropout                       :                                                                 0.05
+activation                    :                                                                 None
+tfixup                        :                                                                False
+window                        :                                                                 None
+dilatation                    :                                                                 None
+global_att                    :                                                                 None
+batch                         :                                                                   16
+n_update                      :                                                              1000000
+eval                          :                                                                 1000
+lr                            :                                                                0.001
+warmup_steps                  :                                                                 None
+optimizer                     :                                                                 adam
+clip                          :                                                                 10.0
+ls                            :                                                                  0.1
+reduce_lr_patience            :                                                                    5
+early_stopping_patience       :                                                                   20
+chk                           :                                                                False
+amp                           :                                                                 True
+dataset_stat                  :                                                                False
+analysis                      :                                                                 True
+====================================================================================================
+                                             Vocabulary                                             
+====================================================================================================
+Vocabulary size               :                                                                   95
+Number of processes           :                                                                   58
+====================================================================================================
+                                               Model                                                
+====================================================================================================
+Number of parameters          :                                                              994,391
+Device                        :                                                 Tesla V100-SXM2-16GB
+                                                                                Tesla V100-SXM2-16GB
+                                                                                Tesla V100-SXM2-16GB
+                                                                                Tesla V100-SXM2-16GB
+Gradient Checkpointing        :                                                             Disabled
+Mixed-Precision               :                                                              Enabled
+====================================================================================================
+                                              Training                                              
+====================================================================================================
+Updates     1000 (epoch  1 @ 213ms/batch) loss 2.259 val_loss 1.791 acc 45.8% val_acc 59.1% lr 1.00e-03 peak_mem   604Mo
+Updates     2000 (epoch  1 @ 205ms/batch) loss 1.689 val_loss 1.610 acc 62.4% val_acc 65.2% lr 1.00e-03 peak_mem   406Mo
+Updates     3000 (epoch  1 @ 207ms/batch) loss 1.588 val_loss 1.534 acc 66.2% val_acc 68.0% lr 1.00e-03 peak_mem   421Mo
+Updates     4000 (epoch  1 @ 203ms/batch) loss 1.522 val_loss 1.493 acc 68.5% val_acc 69.5% lr 1.00e-03 peak_mem   432Mo
+Updates     5000 (epoch  1 @ 204ms/batch) loss 1.502 val_loss 1.470 acc 69.3% val_acc 70.5% lr 1.00e-03 peak_mem   423Mo
+Updates     6000 (epoch  1 @ 205ms/batch) loss 1.472 val_loss 1.452 acc 70.4% val_acc 71.2% lr 1.00e-03 peak_mem   417Mo
+Updates     7000 (epoch  1 @ 205ms/batch) loss 1.450 val_loss 1.436 acc 71.2% val_acc 71.8% lr 1.00e-03 peak_mem   430Mo
+Updates     8000 (epoch  1 @ 210ms/batch) loss 1.454 val_loss 1.426 acc 71.1% val_acc 72.2% lr 1.00e-03 peak_mem   435Mo
+Updates     9000 (epoch  1 @ 202ms/batch) loss 1.433 val_loss 1.418 acc 71.8% val_acc 72.5% lr 1.00e-03 peak_mem   396Mo
+Updates    10000 (epoch  1 @ 206ms/batch) loss 1.424 val_loss 1.418 acc 72.3% val_acc 72.6% lr 1.00e-03 peak_mem   440Mo
+Updates    11000 (epoch  1 @ 204ms/batch) loss 1.414 val_loss 1.408 acc 72.6% val_acc 73.0% lr 1.00e-03 peak_mem   420Mo
+Updates    12000 (epoch  1 @ 207ms/batch) loss 1.409 val_loss 1.401 acc 72.8% val_acc 73.2% lr 1.00e-03 peak_mem   474Mo
+Updates    13000 (epoch  1 @ 205ms/batch) loss 1.401 val_loss 1.409 acc 73.1% val_acc 73.0% lr 1.00e-03 peak_mem   432Mo
+Updates    14000 (epoch  1 @ 206ms/batch) loss 1.390 val_loss 1.388 acc 73.5% val_acc 73.6% lr 1.00e-03 peak_mem   432Mo
+Updates    15000 (epoch  1 @ 202ms/batch) loss 1.391 val_loss 1.395 acc 73.5% val_acc 73.5% lr 1.00e-03 peak_mem   462Mo
+Updates    16000 (epoch  2 @ 217ms/batch) loss 1.389 val_loss 1.379 acc 73.6% val_acc 74.0% lr 1.00e-03 peak_mem   427Mo
+Updates    17000 (epoch  2 @ 207ms/batch) loss 1.380 val_loss 1.373 acc 73.8% val_acc 74.2% lr 1.00e-03 peak_mem   604Mo
+Updates    18000 (epoch  2 @ 200ms/batch) loss 1.381 val_loss 1.375 acc 73.8% val_acc 74.1% lr 1.00e-03 peak_mem   417Mo
+Updates    19000 (epoch  2 @ 205ms/batch) loss 1.380 val_loss 1.369 acc 73.9% val_acc 74.4% lr 1.00e-03 peak_mem   421Mo
+Updates    20000 (epoch  2 @ 206ms/batch) loss 1.375 val_loss 1.366 acc 74.1% val_acc 74.5% lr 1.00e-03 peak_mem   432Mo
+Updates    21000 (epoch  2 @ 205ms/batch) loss 1.385 val_loss 1.373 acc 73.7% val_acc 74.3% lr 1.00e-03 peak_mem   423Mo
+Updates    22000 (epoch  2 @ 203ms/batch) loss 1.371 val_loss 1.365 acc 74.2% val_acc 74.5% lr 1.00e-03 peak_mem   402Mo
+Updates    23000 (epoch  2 @ 207ms/batch) loss 1.374 val_loss 1.362 acc 74.2% val_acc 74.7% lr 1.00e-03 peak_mem   435Mo
+Updates    24000 (epoch  2 @ 208ms/batch) loss 1.376 val_loss 1.365 acc 74.1% val_acc 74.6% lr 1.00e-03 peak_mem   433Mo
+Updates    25000 (epoch  2 @ 204ms/batch) loss 1.365 val_loss 1.363 acc 74.5% val_acc 74.7% lr 1.00e-03 peak_mem   415Mo
+Updates    26000 (epoch  2 @ 204ms/batch) loss 1.368 val_loss 1.362 acc 74.4% val_acc 74.7% lr 1.00e-03 peak_mem   440Mo
+Updates    27000 (epoch  2 @ 202ms/batch) loss 1.361 val_loss 1.366 acc 74.7% val_acc 74.6% lr 1.00e-03 peak_mem   405Mo
+Updates    28000 (epoch  2 @ 204ms/batch) loss 1.361 val_loss 1.360 acc 74.7% val_acc 74.8% lr 1.00e-03 peak_mem   474Mo
+Updates    29000 (epoch  2 @ 204ms/batch) loss 1.361 val_loss 1.357 acc 74.7% val_acc 74.9% lr 1.00e-03 peak_mem   432Mo
+Updates    30000 (epoch  2 @ 204ms/batch) loss 1.356 val_loss 1.355 acc 74.9% val_acc 75.0% lr 1.00e-03 peak_mem   431Mo
+Updates    31000 (epoch  2 @ 203ms/batch) loss 1.353 val_loss 1.359 acc 75.0% val_acc 74.9% lr 1.00e-03 peak_mem   462Mo
+Updates    32000 (epoch  3 @ 213ms/batch) loss 1.355 val_loss 1.349 acc 74.9% val_acc 75.2% lr 1.00e-03 peak_mem   604Mo
+Updates    33000 (epoch  3 @ 203ms/batch) loss 1.353 val_loss 1.352 acc 75.0% val_acc 75.1% lr 1.00e-03 peak_mem   406Mo
+Updates    34000 (epoch  3 @ 201ms/batch) loss 1.357 val_loss 1.350 acc 74.8% val_acc 75.2% lr 1.00e-03 peak_mem   421Mo
+Updates    35000 (epoch  3 @ 202ms/batch) loss 1.351 val_loss 1.350 acc 75.1% val_acc 75.2% lr 1.00e-03 peak_mem   432Mo
+Updates    36000 (epoch  3 @ 204ms/batch) loss 1.358 val_loss 1.349 acc 74.8% val_acc 75.2% lr 1.00e-03 peak_mem   423Mo
+Updates    37000 (epoch  3 @ 201ms/batch) loss 1.355 val_loss 1.349 acc 74.9% val_acc 75.2% lr 1.00e-03 peak_mem   418Mo
+Updates    38000 (epoch  3 @ 203ms/batch) loss 1.349 val_loss 1.345 acc 75.1% val_acc 75.3% lr 1.00e-03 peak_mem   402Mo
+Updates    39000 (epoch  3 @ 208ms/batch) loss 1.358 val_loss 1.349 acc 74.8% val_acc 75.1% lr 1.00e-03 peak_mem   435Mo
+Updates    40000 (epoch  3 @ 200ms/batch) loss 1.355 val_loss 1.345 acc 74.9% val_acc 75.4% lr 1.00e-03 peak_mem   391Mo
+Updates    41000 (epoch  3 @ 205ms/batch) loss 1.350 val_loss 1.351 acc 75.1% val_acc 75.2% lr 1.00e-03 peak_mem   415Mo
+Updates    42000 (epoch  3 @ 203ms/batch) loss 1.352 val_loss 1.349 acc 75.1% val_acc 75.3% lr 1.00e-03 peak_mem   440Mo
+Updates    43000 (epoch  3 @ 203ms/batch) loss 1.345 val_loss 1.348 acc 75.3% val_acc 75.3% lr 1.00e-03 peak_mem   474Mo
+Updates    44000 (epoch  3 @ 206ms/batch) loss 1.347 val_loss 1.345 acc 75.3% val_acc 75.3% lr 1.00e-03 peak_mem   432Mo
+Updates    45000 (epoch  3 @ 199ms/batch) loss 1.343 val_loss 1.345 acc 75.4% val_acc 75.4% lr 1.00e-03 peak_mem   432Mo
+Updates    46000 (epoch  3 @ 203ms/batch) loss 1.345 val_loss 1.344 acc 75.4% val_acc 75.4% lr 1.00e-03 peak_mem   462Mo
+Updates    47000 (epoch  4 @ 210ms/batch) loss 1.343 val_loss 1.341 acc 75.4% val_acc 75.4% lr 1.00e-03 peak_mem   436Mo
+Updates    48000 (epoch  4 @ 207ms/batch) loss 1.342 val_loss 1.339 acc 75.4% val_acc 75.6% lr 1.00e-03 peak_mem   604Mo
+Updates    49000 (epoch  4 @ 201ms/batch) loss 1.342 val_loss 1.341 acc 75.4% val_acc 75.4% lr 1.00e-03 peak_mem   406Mo
+Updates    50000 (epoch  4 @ 205ms/batch) loss 1.344 val_loss 1.340 acc 75.4% val_acc 75.5% lr 1.00e-03 peak_mem   421Mo
+Updates    51000 (epoch  4 @ 206ms/batch) loss 1.343 val_loss 1.336 acc 75.4% val_acc 75.7% lr 1.00e-03 peak_mem   432Mo
+Updates    52000 (epoch  4 @ 203ms/batch) loss 1.351 val_loss 1.342 acc 75.1% val_acc 75.5% lr 1.00e-03 peak_mem   423Mo
+Updates    53000 (epoch  4 @ 201ms/batch) loss 1.342 val_loss 1.337 acc 75.4% val_acc 75.6% lr 1.00e-03 peak_mem   417Mo
+Updates    54000 (epoch  4 @ 202ms/batch) loss 1.341 val_loss 1.338 acc 75.5% val_acc 75.6% lr 1.00e-03 peak_mem   435Mo
+Updates    55000 (epoch  4 @ 207ms/batch) loss 1.350 val_loss 1.339 acc 75.1% val_acc 75.6% lr 1.00e-03 peak_mem   433Mo
+Updates    56000 (epoch  4 @ 201ms/batch) loss 1.342 val_loss 1.338 acc 75.4% val_acc 75.6% lr 1.00e-03 peak_mem   396Mo
+Updates    57000 (epoch  4 @ 205ms/batch) loss 1.343 val_loss 1.337 acc 75.4% val_acc 75.6% lr 1.00e-03 peak_mem   440Mo
+Updates    58000 (epoch  4 @ 197ms/batch) loss 1.342 val_loss 1.339 acc 75.4% val_acc 75.6% lr 1.00e-03 peak_mem   420Mo
+Updates    59000 (epoch  4 @ 207ms/batch) loss 1.339 val_loss 1.339 acc 75.6% val_acc 75.6% lr 1.00e-03 peak_mem   474Mo
+Updates    60000 (epoch  4 @ 205ms/batch) loss 1.342 val_loss 1.339 acc 75.5% val_acc 75.6% lr 1.00e-03 peak_mem   430Mo
+Updates    61000 (epoch  4 @ 199ms/batch) loss 1.333 val_loss 1.340 acc 75.9% val_acc 75.5% lr 1.00e-03 peak_mem   432Mo
+Updates    62000 (epoch  4 @ 203ms/batch) loss 1.337 val_loss 1.337 acc 75.7% val_acc 75.7% lr 1.00e-03 peak_mem   462Mo
+Updates    63000 (epoch  5 @ 211ms/batch) loss 1.337 val_loss 1.337 acc 75.6% val_acc 75.7% lr 1.00e-03 peak_mem   409Mo
+Updates    64000 (epoch  5 @ 204ms/batch) loss 1.334 val_loss 1.333 acc 75.7% val_acc 75.7% lr 1.00e-03 peak_mem   604Mo
+Updates    65000 (epoch  5 @ 203ms/batch) loss 1.337 val_loss 1.334 acc 75.6% val_acc 75.7% lr 1.00e-03 peak_mem   417Mo
+Updates    66000 (epoch  5 @ 204ms/batch) loss 1.337 val_loss 1.334 acc 75.6% val_acc 75.8% lr 1.00e-03 peak_mem   432Mo
+Updates    67000 (epoch  5 @ 204ms/batch) loss 1.338 val_loss 1.334 acc 75.6% val_acc 75.8% lr 1.00e-03 peak_mem   423Mo
+Updates    68000 (epoch  5 @ 205ms/batch) loss 1.346 val_loss 1.332 acc 75.3% val_acc 75.8% lr 1.00e-03 peak_mem   418Mo
+Updates    69000 (epoch  5 @ 204ms/batch) loss 1.335 val_loss 1.331 acc 75.7% val_acc 75.9% lr 1.00e-03 peak_mem   402Mo
+Updates    70000 (epoch  5 @ 208ms/batch) loss 1.339 val_loss 1.333 acc 75.6% val_acc 75.8% lr 1.00e-03 peak_mem   435Mo
+Updates    71000 (epoch  5 @ 207ms/batch) loss 1.345 val_loss 1.334 acc 75.3% val_acc 75.8% lr 1.00e-03 peak_mem   433Mo
+Updates    72000 (epoch  5 @ 203ms/batch) loss 1.337 val_loss 1.337 acc 75.6% val_acc 75.7% lr 1.00e-03 peak_mem   415Mo
+Updates    73000 (epoch  5 @ 206ms/batch) loss 1.338 val_loss 1.334 acc 75.6% val_acc 75.8% lr 1.00e-03 peak_mem   440Mo
+Updates    74000 (epoch  5 @ 204ms/batch) loss 1.333 val_loss 1.333 acc 75.8% val_acc 75.8% lr 1.00e-03 peak_mem   438Mo
+Updates    75000 (epoch  5 @ 204ms/batch) loss 1.336 val_loss 1.333 acc 75.7% val_acc 75.8% lr 1.00e-03 peak_mem   474Mo
+Updates    76000 (epoch  5 @ 203ms/batch) loss 1.333 val_loss 1.332 acc 75.8% val_acc 75.9% lr 1.00e-03 peak_mem   432Mo
+Updates    77000 (epoch  5 @ 201ms/batch) loss 1.332 val_loss 1.333 acc 75.9% val_acc 75.9% lr 1.00e-03 peak_mem   431Mo
+Updates    78000 (epoch  5 @ 203ms/batch) loss 1.332 val_loss 1.335 acc 75.9% val_acc 75.8% lr 1.00e-03 peak_mem   462Mo
+Updates    79000 (epoch  6 @ 214ms/batch) loss 1.333 val_loss 1.332 acc 75.8% val_acc 75.8% lr 1.00e-03 peak_mem   604Mo
+Updates    80000 (epoch  6 @ 204ms/batch) loss 1.329 val_loss 1.330 acc 76.0% val_acc 75.9% lr 1.00e-03 peak_mem   406Mo
+Updates    81000 (epoch  6 @ 205ms/batch) loss 1.337 val_loss 1.333 acc 75.7% val_acc 75.8% lr 1.00e-03 peak_mem   421Mo
+Updates    82000 (epoch  6 @ 206ms/batch) loss 1.331 val_loss 1.330 acc 75.9% val_acc 75.9% lr 1.00e-03 peak_mem   432Mo
+Updates    83000 (epoch  6 @ 207ms/batch) loss 1.341 val_loss 1.332 acc 75.5% val_acc 75.9% lr 1.00e-03 peak_mem   423Mo
+Updates    84000 (epoch  6 @ 205ms/batch) loss 1.334 val_loss 1.330 acc 75.7% val_acc 75.9% lr 1.00e-03 peak_mem   417Mo
+Updates    85000 (epoch  6 @ 203ms/batch) loss 1.330 val_loss 1.333 acc 75.9% val_acc 75.9% lr 1.00e-03 peak_mem   430Mo
+Updates    86000 (epoch  6 @ 208ms/batch) loss 1.342 val_loss 1.331 acc 75.5% val_acc 75.9% lr 1.00e-03 peak_mem   435Mo
+Updates    87000 (epoch  6 @ 203ms/batch) loss 1.336 val_loss 1.338 acc 75.7% val_acc 75.6% lr 1.00e-03 peak_mem   391Mo
+Updates    88000 (epoch  6 @ 205ms/batch) loss 1.333 val_loss 1.328 acc 75.8% val_acc 76.0% lr 1.00e-03 peak_mem   415Mo
+Updates    89000 (epoch  6 @ 204ms/batch) loss 1.334 val_loss 1.329 acc 75.8% val_acc 76.0% lr 1.00e-03 peak_mem   440Mo
+Updates    90000 (epoch  6 @ 206ms/batch) loss 1.332 val_loss 1.330 acc 75.8% val_acc 75.9% lr 1.00e-03 peak_mem   474Mo
+Updates    91000 (epoch  6 @ 203ms/batch) loss 1.330 val_loss 1.334 acc 76.0% val_acc 75.8% lr 1.00e-03 peak_mem   432Mo
+Updates    92000 (epoch  6 @ 203ms/batch) loss 1.326 val_loss 1.332 acc 76.1% val_acc 75.9% lr 1.00e-03 peak_mem   432Mo
+Updates    93000 (epoch  6 @ 200ms/batch) loss 1.329 val_loss 1.330 acc 76.0% val_acc 75.9% lr 1.00e-03 peak_mem   462Mo
+Updates    94000 (epoch  7 @ 211ms/batch) loss 1.329 val_loss 1.326 acc 76.0% val_acc 76.1% lr 1.00e-03 peak_mem   427Mo
+Updates    95000 (epoch  7 @ 207ms/batch) loss 1.329 val_loss 1.327 acc 75.9% val_acc 76.1% lr 1.00e-03 peak_mem   604Mo
+Updates    96000 (epoch  7 @ 202ms/batch) loss 1.328 val_loss 1.330 acc 76.0% val_acc 75.9% lr 1.00e-03 peak_mem   417Mo
+Updates    97000 (epoch  7 @ 208ms/batch) loss 1.331 val_loss 1.326 acc 75.9% val_acc 76.1% lr 1.00e-03 peak_mem   421Mo
+Updates    98000 (epoch  7 @ 204ms/batch) loss 1.330 val_loss 1.326 acc 75.9% val_acc 76.1% lr 1.00e-03 peak_mem   432Mo
+Updates    99000 (epoch  7 @ 202ms/batch) loss 1.341 val_loss 1.327 acc 75.5% val_acc 76.0% lr 1.00e-03 peak_mem   423Mo
+Updates   100000 (epoch  7 @ 204ms/batch) loss 1.328 val_loss 1.329 acc 76.0% val_acc 76.0% lr 1.00e-03 peak_mem   402Mo
+Updates   101000 (epoch  7 @ 203ms/batch) loss 1.332 val_loss 1.327 acc 75.9% val_acc 76.1% lr 1.00e-03 peak_mem   435Mo
+Updates   102000 (epoch  7 @ 206ms/batch) loss 1.338 val_loss 1.334 acc 75.6% val_acc 75.9% lr 1.00e-03 peak_mem   433Mo
+Updates   103000 (epoch  7 @ 202ms/batch) loss 1.327 val_loss 1.327 acc 76.1% val_acc 76.0% lr 1.00e-03 peak_mem   415Mo
+Updates   104000 (epoch  7 @ 206ms/batch) loss 1.333 val_loss 1.329 acc 75.8% val_acc 76.0% lr 1.00e-03 peak_mem   440Mo
+Updates   105000 (epoch  7 @ 205ms/batch) loss 1.329 val_loss 1.325 acc 76.0% val_acc 76.1% lr 1.00e-03 peak_mem   405Mo
+Updates   106000 (epoch  7 @ 204ms/batch) loss 1.329 val_loss 1.328 acc 76.0% val_acc 76.0% lr 1.00e-03 peak_mem   474Mo
+Updates   107000 (epoch  7 @ 206ms/batch) loss 1.329 val_loss 1.326 acc 76.0% val_acc 76.1% lr 1.00e-03 peak_mem   432Mo
+Updates   108000 (epoch  7 @ 206ms/batch) loss 1.326 val_loss 1.326 acc 76.2% val_acc 76.1% lr 1.00e-03 peak_mem   431Mo
+Updates   109000 (epoch  7 @ 203ms/batch) loss 1.325 val_loss 1.329 acc 76.2% val_acc 76.0% lr 1.00e-03 peak_mem   462Mo
+Updates   110000 (epoch  8 @ 213ms/batch) loss 1.327 val_loss 1.327 acc 76.0% val_acc 76.1% lr 1.00e-03 peak_mem   604Mo
+Updates   111000 (epoch  8 @ 205ms/batch) loss 1.324 val_loss 1.322 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   406Mo
+Updates   112000 (epoch  8 @ 205ms/batch) loss 1.331 val_loss 1.328 acc 75.9% val_acc 76.0% lr 1.00e-03 peak_mem   421Mo
+Updates   113000 (epoch  8 @ 202ms/batch) loss 1.324 val_loss 1.324 acc 76.2% val_acc 76.1% lr 1.00e-03 peak_mem   432Mo
+Updates   114000 (epoch  8 @ 207ms/batch) loss 1.329 val_loss 1.325 acc 75.9% val_acc 76.1% lr 1.00e-03 peak_mem   423Mo
+Updates   115000 (epoch  8 @ 205ms/batch) loss 1.334 val_loss 1.325 acc 75.8% val_acc 76.1% lr 1.00e-03 peak_mem   418Mo
+Updates   116000 (epoch  8 @ 203ms/batch) loss 1.327 val_loss 1.325 acc 76.1% val_acc 76.2% lr 1.00e-03 peak_mem   402Mo
+Updates   117000 (epoch  8 @ 208ms/batch) loss 1.331 val_loss 1.324 acc 75.9% val_acc 76.2% lr 1.00e-03 peak_mem   435Mo
+Updates   118000 (epoch  8 @ 207ms/batch) loss 1.335 val_loss 1.325 acc 75.7% val_acc 76.1% lr 1.00e-03 peak_mem   391Mo
+Updates   119000 (epoch  8 @ 200ms/batch) loss 1.328 val_loss 1.324 acc 76.0% val_acc 76.2% lr 1.00e-03 peak_mem   415Mo
+Updates   120000 (epoch  8 @ 205ms/batch) loss 1.331 val_loss 1.324 acc 75.9% val_acc 76.2% lr 1.00e-03 peak_mem   440Mo
+Updates   121000 (epoch  8 @ 205ms/batch) loss 1.322 val_loss 1.324 acc 76.2% val_acc 76.2% lr 1.00e-03 peak_mem   438Mo
+Updates   122000 (epoch  8 @ 206ms/batch) loss 1.329 val_loss 1.325 acc 76.0% val_acc 76.1% lr 1.00e-03 peak_mem   474Mo
+Updates   123000 (epoch  8 @ 204ms/batch) loss 1.324 val_loss 1.325 acc 76.3% val_acc 76.1% lr 1.00e-03 peak_mem   432Mo
+Updates   124000 (epoch  8 @ 203ms/batch) loss 1.323 val_loss 1.326 acc 76.3% val_acc 76.1% lr 1.00e-03 peak_mem   462Mo
+Updates   125000 (epoch  9 @ 211ms/batch) loss 1.326 val_loss 1.326 acc 76.1% val_acc 76.1% lr 1.00e-03 peak_mem   436Mo
+Updates   126000 (epoch  9 @ 205ms/batch) loss 1.325 val_loss 1.322 acc 76.1% val_acc 76.3% lr 1.00e-03 peak_mem   604Mo
+Updates   127000 (epoch  9 @ 204ms/batch) loss 1.321 val_loss 1.322 acc 76.3% val_acc 76.2% lr 1.00e-03 peak_mem   406Mo
+Updates   128000 (epoch  9 @ 206ms/batch) loss 1.327 val_loss 1.323 acc 76.0% val_acc 76.3% lr 1.00e-03 peak_mem   421Mo
+Updates   129000 (epoch  9 @ 206ms/batch) loss 1.323 val_loss 1.322 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   432Mo
+Updates   130000 (epoch  9 @ 205ms/batch) loss 1.334 val_loss 1.321 acc 75.8% val_acc 76.3% lr 1.00e-03 peak_mem   423Mo
+Updates   131000 (epoch  9 @ 201ms/batch) loss 1.327 val_loss 1.324 acc 76.0% val_acc 76.2% lr 1.00e-03 peak_mem   417Mo
+Updates   132000 (epoch  9 @ 206ms/batch) loss 1.325 val_loss 1.322 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   435Mo
+Updates   133000 (epoch  9 @ 208ms/batch) loss 1.334 val_loss 1.326 acc 75.8% val_acc 76.1% lr 1.00e-03 peak_mem   433Mo
+Updates   134000 (epoch  9 @ 198ms/batch) loss 1.328 val_loss 1.322 acc 76.0% val_acc 76.2% lr 1.00e-03 peak_mem   396Mo
+Updates   135000 (epoch  9 @ 203ms/batch) loss 1.326 val_loss 1.323 acc 76.1% val_acc 76.2% lr 1.00e-03 peak_mem   440Mo
+Updates   136000 (epoch  9 @ 201ms/batch) loss 1.328 val_loss 1.323 acc 76.0% val_acc 76.2% lr 1.00e-03 peak_mem   420Mo
+Updates   137000 (epoch  9 @ 205ms/batch) loss 1.325 val_loss 1.325 acc 76.1% val_acc 76.2% lr 1.00e-03 peak_mem   474Mo
+Updates   138000 (epoch  9 @ 201ms/batch) loss 1.326 val_loss 1.324 acc 76.1% val_acc 76.2% lr 1.00e-03 peak_mem   430Mo
+Updates   139000 (epoch  9 @ 204ms/batch) loss 1.318 val_loss 1.323 acc 76.5% val_acc 76.2% lr 1.00e-03 peak_mem   432Mo
+Updates   140000 (epoch  9 @ 204ms/batch) loss 1.324 val_loss 1.323 acc 76.3% val_acc 76.2% lr 1.00e-03 peak_mem   462Mo
+Updates   141000 (epoch 10 @ 213ms/batch) loss 1.324 val_loss 1.321 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   427Mo
+Updates   142000 (epoch 10 @ 205ms/batch) loss 1.320 val_loss 1.320 acc 76.3% val_acc 76.4% lr 1.00e-03 peak_mem   604Mo
+Updates   143000 (epoch 10 @ 204ms/batch) loss 1.324 val_loss 1.324 acc 76.2% val_acc 76.2% lr 1.00e-03 peak_mem   417Mo
+Updates   144000 (epoch 10 @ 201ms/batch) loss 1.324 val_loss 1.324 acc 76.2% val_acc 76.2% lr 1.00e-03 peak_mem   421Mo
+Updates   145000 (epoch 10 @ 205ms/batch) loss 1.323 val_loss 1.323 acc 76.2% val_acc 76.2% lr 1.00e-03 peak_mem   432Mo
+Updates   146000 (epoch 10 @ 204ms/batch) loss 1.332 val_loss 1.320 acc 75.9% val_acc 76.3% lr 1.00e-03 peak_mem   423Mo
+Updates   147000 (epoch 10 @ 201ms/batch) loss 1.324 val_loss 1.321 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   402Mo
+Updates   148000 (epoch 10 @ 207ms/batch) loss 1.326 val_loss 1.321 acc 76.1% val_acc 76.3% lr 1.00e-03 peak_mem   435Mo
+Updates   149000 (epoch 10 @ 207ms/batch) loss 1.333 val_loss 1.320 acc 75.8% val_acc 76.3% lr 1.00e-03 peak_mem   433Mo
+Updates   150000 (epoch 10 @ 205ms/batch) loss 1.324 val_loss 1.321 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   415Mo
+Updates   151000 (epoch 10 @ 205ms/batch) loss 1.327 val_loss 1.323 acc 76.1% val_acc 76.2% lr 1.00e-03 peak_mem   440Mo
+Updates   152000 (epoch 10 @ 204ms/batch) loss 1.319 val_loss 1.322 acc 76.4% val_acc 76.3% lr 1.00e-03 peak_mem   438Mo
+Updates   153000 (epoch 10 @ 205ms/batch) loss 1.324 val_loss 1.325 acc 76.2% val_acc 76.2% lr 1.00e-03 peak_mem   474Mo
+Updates   154000 (epoch 10 @ 203ms/batch) loss 1.323 val_loss 1.321 acc 76.3% val_acc 76.3% lr 1.00e-03 peak_mem   432Mo
+Updates   155000 (epoch 10 @ 205ms/batch) loss 1.321 val_loss 1.323 acc 76.4% val_acc 76.2% lr 1.00e-03 peak_mem   431Mo
+Updates   156000 (epoch 10 @ 200ms/batch) loss 1.320 val_loss 1.325 acc 76.4% val_acc 76.1% lr 1.00e-03 peak_mem   462Mo
+Updates   157000 (epoch 11 @ 215ms/batch) loss 1.322 val_loss 1.320 acc 76.2% val_acc 76.3% lr 1.00e-03 peak_mem   604Mo
+Updates   158000 (epoch 11 @ 198ms/batch) loss 1.318 val_loss 1.321 acc 76.4% val_acc 76.3% lr 1.00e-03 peak_mem   406Mo
+Updates   159000 (epoch 11 @ 206ms/batch) loss 1.326 val_loss 1.319 acc 76.1% val_acc 76.3% lr 1.00e-03 peak_mem   421Mo
+Updates   160000 (epoch 11 @ 203ms/batch) loss 1.319 val_loss 1.320 acc 76.4% val_acc 76.3% lr 1.00e-03 peak_mem   432Mo
+Updates   161000 (epoch 11 @ 206ms/batch) loss 1.329 val_loss 1.326 acc 75.9% val_acc 76.2% lr 1.00e-03 peak_mem   423Mo
+Updates   162000 (epoch 11 @ 200ms/batch) loss 1.324 val_loss 1.325 acc 76.2% val_acc 76.1% lr 1.00e-03 peak_mem   417Mo
+Training done in 22:46:08
+Model loaded
+====================================================================================================
+                                             Evaluation                                             
+====================================================================================================
+Train                         :                                                 loss 0.713 acc 76.4%
+Valid ID                      :                                                 loss 0.714 acc 76.4%
+Valid OOD (Connection)        :                                                 loss 0.815 acc 73.8%
+Valid OOD (CPU)               :                                                 loss 0.988 acc 72.7%
+Valid OOD (IO)                :                                                 loss 2.393 acc 37.5%
+Valid OOD (OPCache)           :                                                 loss 1.139 acc 66.6%
+Valid OOD (Socket)            :                                                 loss 1.036 acc 69.6%
+Valid OOD (SSL)               :                                                 loss 0.904 acc 71.9%
+Test ID                       :                                                 loss 0.719 acc 76.2%
+Test OOD (Connection)         :                                                 loss 0.815 acc 73.8%
+Test OOD (CPU)                :                                                 loss 0.980 acc 72.9%
+Test OOD (IO)                 :                                                 loss 2.370 acc 37.9%
+Test OOD (OPCache)            :                                                 loss 1.155 acc 66.1%
+Test OOD (Socket)             :                                                 loss 1.049 acc 69.3%
+Test OOD (SSL)                :                                                 loss 0.905 acc 71.9%
+====================================================================================================
+                                           OOD Detection                                            
+====================================================================================================
+Valid OOD (Connection):
+    AUROC                     :                                                               82.48%
+    Recall                    :                                                               76.71%
+    Precision                 :                                                               76.32%
+    F-score                   :                                                               76.52%
+    Accuracy                  :                                                               76.46%
+Test OOD (Connection):
+    AUROC                     :                                                               81.02%
+    Recall                    :                                                               76.90%
+    Precision                 :                                                               74.21%
+    F-score                   :                                                               75.53%
+    Accuracy                  :                                                               75.09%
+Valid OOD (CPU):
+    AUROC                     :                                                               99.29%
+    Recall                    :                                                               97.56%
+    Precision                 :                                                               95.86%
+    F-score                   :                                                               96.70%
+    Accuracy                  :                                                               97.55%
+Test OOD (CPU):
+    AUROC                     :                                                               99.06%
+    Recall                    :                                                               97.20%
+    Precision                 :                                                               94.19%
+    F-score                   :                                                               95.67%
+    Accuracy                  :                                                               96.82%
+Valid OOD (IO):
+    AUROC                     :                                                              100.00%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                              100.00%
+    F-score                   :                                                              100.00%
+    Accuracy                  :                                                              100.00%
+Test OOD (IO):
+    AUROC                     :                                                              100.00%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                              100.00%
+    F-score                   :                                                              100.00%
+    Accuracy                  :                                                              100.00%
+Valid OOD (OPCache):
+    AUROC                     :                                                               99.74%
+    Recall                    :                                                               98.34%
+    Precision                 :                                                               98.81%
+    F-score                   :                                                               98.58%
+    Accuracy                  :                                                               98.58%
+Test OOD (OPCache):
+    AUROC                     :                                                               99.72%
+    Recall                    :                                                               98.46%
+    Precision                 :                                                               98.30%
+    F-score                   :                                                               98.38%
+    Accuracy                  :                                                               98.38%
+Valid OOD (Socket):
+    AUROC                     :                                                               99.47%
+    Recall                    :                                                               98.19%
+    Precision                 :                                                               96.34%
+    F-score                   :                                                               97.25%
+    Accuracy                  :                                                               97.23%
+Test OOD (Socket):
+    AUROC                     :                                                               99.45%
+    Recall                    :                                                               98.54%
+    Precision                 :                                                               95.21%
+    F-score                   :                                                               96.85%
+    Accuracy                  :                                                               96.79%
+Valid OOD (SSL):
+    AUROC                     :                                                               93.26%
+    Recall                    :                                                               87.17%
+    Precision                 :                                                               87.06%
+    F-score                   :                                                               87.11%
+    Accuracy                  :                                                               87.10%
+Test OOD (SSL):
+    AUROC                     :                                                               92.28%
+    Recall                    :                                                               86.73%
+    Precision                 :                                                               84.93%
+    F-score                   :                                                               85.82%
+    Accuracy                  :                                                               85.67%
+====================================================================================================

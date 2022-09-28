@@ -1,0 +1,161 @@
+====================================================================================================
+                                             Arguments                                              
+====================================================================================================
+seed                          :                                                                    0
+log_folder                    :                                                          logs/3-gram
+gpu                           :                                                                 None
+data_path                     :                                /lustre04/scratch/qfournie/data/large
+train_folder                  :                                                          Train:train
+valid_id_folder               :                                                    Valid ID:valid_id
+valid_ood_folders             :                          Valid OOD (Connection):valid_ood_connection
+                                                                       Valid OOD (CPU):valid_ood_cpu
+                                                                     Valid OOD (IO):valid_ood_dumpio
+                                                               Valid OOD (OPCache):valid_ood_opcache
+                                                                 Valid OOD (Socket):valid_ood_socket
+                                                                       Valid OOD (SSL):valid_ood_ssl
+test_id_folder                :                                                      Test ID:test_id
+test_ood_folders              :                            Test OOD (Connection):test_ood_connection
+                                                                         Test OOD (CPU):test_ood_cpu
+                                                                       Test OOD (IO):test_ood_dumpio
+                                                                 Test OOD (OPCache):test_ood_opcache
+                                                                   Test OOD (Socket):test_ood_socket
+                                                                         Test OOD (SSL):test_ood_ssl
+generate_dataset              :                                                                False
+max_sample                    :                                                                 None
+max_token                     :                                                                 None
+model                         :                                                                ngram
+load_model                    :                                                                 None
+order                         :                                                                    3
+dim_sys                       :                                                                 None
+dim_entry                     :                                                                 None
+dim_ret                       :                                                                 None
+dim_proc                      :                                                                 None
+dim_pid                       :                                                                 None
+dim_tid                       :                                                                 None
+dim_time                      :                                                                 None
+dim_order                     :                                                                 None
+n_head                        :                                                                 None
+n_hidden                      :                                                                 None
+n_layer                       :                                                                 None
+dropout                       :                                                                 None
+activation                    :                                                                 None
+tfixup                        :                                                                False
+window                        :                                                                 None
+dilatation                    :                                                                 None
+global_att                    :                                                                 None
+batch                         :                                                                 None
+n_update                      :                                                                 None
+eval                          :                                                                 None
+lr                            :                                                                 None
+warmup_steps                  :                                                                 None
+optimizer                     :                                                                 None
+clip                          :                                                                 None
+ls                            :                                                                 None
+reduce_lr_patience            :                                                                 None
+early_stopping_patience       :                                                                 None
+chk                           :                                                                False
+amp                           :                                                                False
+dataset_stat                  :                                                                False
+analysis                      :                                                                 True
+====================================================================================================
+                                             Vocabulary                                             
+====================================================================================================
+Vocabulary size               :                                                                   95
+Number of processes           :                                                                   58
+====================================================================================================
+                                               Model                                                
+====================================================================================================
+3-grams extraction done in 0:28:06
+====================================================================================================
+                                             Evaluation                                             
+====================================================================================================
+Train                         :                                                            acc 30.7%
+Valid ID                      :                                                            acc 30.7%
+Valid OOD (Connection)        :                                                            acc 30.5%
+Valid OOD (CPU)               :                                                            acc 44.2%
+Valid OOD (IO)                :                                                            acc 26.9%
+Valid OOD (OPCache)           :                                                            acc 31.0%
+Valid OOD (Socket)            :                                                            acc 36.3%
+Valid OOD (SSL)               :                                                            acc 30.6%
+Test ID                       :                                                            acc 30.6%
+Test OOD (Connection)         :                                                            acc 30.6%
+Test OOD (CPU)                :                                                            acc 44.4%
+Test OOD (IO)                 :                                                            acc 26.9%
+Test OOD (OPCache)            :                                                            acc 31.0%
+Test OOD (Socket)             :                                                            acc 36.2%
+Test OOD (SSL)                :                                                            acc 30.5%
+====================================================================================================
+                                           OOD Detection                                            
+====================================================================================================
+Valid OOD (Connection):
+    AUROC                     :                                                               52.70%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.00%
+    F-score                   :                                                               66.66%
+    Accuracy                  :                                                               50.00%
+Test OOD (Connection):
+    AUROC                     :                                                               51.64%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               49.99%
+    F-score                   :                                                               66.66%
+    Accuracy                  :                                                               50.00%
+Valid OOD (CPU):
+    AUROC                     :                                                                2.10%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                               36.77%
+    F-score                   :                                                               53.77%
+    Accuracy                  :                                                               36.77%
+Test OOD (CPU):
+    AUROC                     :                                                                0.82%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                               36.19%
+    F-score                   :                                                               53.15%
+    Accuracy                  :                                                               36.19%
+Valid OOD (IO):
+    AUROC                     :                                                               98.83%
+    Recall                    :                                                               95.51%
+    Precision                 :                                                               94.51%
+    F-score                   :                                                               95.01%
+    Accuracy                  :                                                               94.99%
+Test OOD (IO):
+    AUROC                     :                                                               98.70%
+    Recall                    :                                                               95.26%
+    Precision                 :                                                               93.91%
+    F-score                   :                                                               94.58%
+    Accuracy                  :                                                               94.54%
+Valid OOD (OPCache):
+    AUROC                     :                                                               69.44%
+    Recall                    :                                                               93.88%
+    Precision                 :                                                               53.06%
+    F-score                   :                                                               67.80%
+    Accuracy                  :                                                               55.41%
+Test OOD (OPCache):
+    AUROC                     :                                                               68.37%
+    Recall                    :                                                               93.23%
+    Precision                 :                                                               52.83%
+    F-score                   :                                                               67.44%
+    Accuracy                  :                                                               54.99%
+Valid OOD (Socket):
+    AUROC                     :                                                               21.26%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.01%
+    F-score                   :                                                               66.67%
+    Accuracy                  :                                                               50.02%
+Test OOD (Socket):
+    AUROC                     :                                                               21.41%
+    Recall                    :                                                              100.00%
+    Precision                 :                                                               50.01%
+    F-score                   :                                                               66.68%
+    Accuracy                  :                                                               50.02%
+Valid OOD (SSL):
+    AUROC                     :                                                               50.98%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.01%
+    F-score                   :                                                               66.67%
+    Accuracy                  :                                                               50.01%
+Test OOD (SSL):
+    AUROC                     :                                                               50.46%
+    Recall                    :                                                               99.99%
+    Precision                 :                                                               50.00%
+    F-score                   :                                                               66.67%
+    Accuracy                  :                                                               50.00%
