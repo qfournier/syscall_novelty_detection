@@ -16,6 +16,8 @@ If you encounter an error, switch off your monitor, then you wont see it anymore
 
 5. Generating OOD behaviors [setup-ood.md](resources/setup-ood.md)
 
+A toy dataset is available in `data/toy` and a large dataset is available at [https://zenodo.org/record/7378420](https://zenodo.org/record/7378420).
+
 # How to Analyse the Trace
 
 1. Deploy the analysis environment:
