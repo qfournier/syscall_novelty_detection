@@ -2,8 +2,6 @@
 
 Description of the project
 
-If you encounter an error, switch off your monitor, then you wont see it anymore.
-
 # How to collect data
 
 1. Deploy the server: [setup-server.md](resources/setup-server.md)
